@@ -2,16 +2,146 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto ;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+//this is my header with my navbar within it
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: pink;
+  width: 100%;
+  box-sizing: border-box;
+
+  .logo{
+    color: red;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+  }
+
+  nav{
+    float: right;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: green;
+    text-decoration: none;
+    display: block;
+  }
+
+  a:hover, .active{
+    color: green;
+    background: #2196f3;
+  }
+
+  .toggle{
+    color: green;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+
+  @media  (max-width: 991px){
+    header{
+      padding: 0 20px;
+    }
+
+    nav{
+      // display: none;
+      position: absolute;
+      width: 100%;
+      height: calc(100vh-50px);
+      background: 333;
+      top: 50px;
+      left: -100%;
+      transition: 0.5s;
+
+      .active{
+        left: 0;
+      }
+
+      ul{
+        display: block;
+        text-align: center;
+      }
+
+      li a{
+        border-bottom: 1px solid rgba(0,0,0,.2)
+      }
+
+
+    }
+
+
+    .toggle{
+      display: block;
+    }
+
+
+  }
+
+
+
+
+
+
 
 }
 
 nav{
   grid-column: 1/7;
-  text-align: center;
-  border: 1px solid black;
-      grid-gap: 15px;
-};
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 1/7;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+
+  .menu{
+
+    ul{
+      width: 80%;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+
+      li{
+        list-style: none;
+        display: inline-block;
+        padding: 20px
+      }
+    }
+
+  }
+
+  .pagelogo{
+    grid-column: 1/3;
+
+  }
+
+}
 
 //this are my slide show images
 .slideimages{
@@ -54,6 +184,10 @@ nav{
       grid-column: 1/2;
       grid-row: 1/2;
       border: 1px solid black;
+      img{
+        width: 100%;
+        height: 100%;
+      }
 
     }
 
@@ -61,17 +195,29 @@ nav{
       grid-column: 2/3;
       grid-row: 1/2;
       border: 1px solid black;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .pic3{
       grid-column: 1/2;
       grid-row: 2/3;
       border: 1px solid black;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
     .pic4{
       grid-column: 2/3;
       grid-row: 2/3;
       border: 1px solid black;
+      img{
+        width: 100%;
+        height: 100%;
+      }
     }
 
   }
