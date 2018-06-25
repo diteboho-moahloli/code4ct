@@ -1,0 +1,153 @@
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 0;
+  padding: 0;
+  grid-gap: 15px;
+}
+
+header{
+  grid-row: 1/2;
+  grid-column: 1/7;
+  border: 1px solid black;
+}
+
+section{
+  grid-row: 2/3;
+  grid-column: 1/7;
+  border: 1px solid black;
+}
+
+#welcomeToCompany{
+  grid-row: 3/4;
+  grid-column: 1/7;
+  border: 5px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+
+  .companyInfo{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border: 1px solid black;
+  }
+
+  .companyPic{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    border: 1px solid black;
+  }
+
+  .whoWeArepic{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    border: 1px solid black;
+  }
+
+  .whoWeAre{
+    grid-row: 2/3;
+    grid-column: 3/7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+
+    .whoWeAreInfo{
+      grid-row: 1/2;
+      grid-column: 1/3;
+      border: 1px solid black;
+    }
+
+    .ourVision{
+      grid-row: 2/3;
+      grid-column: 1/2;
+      border: 1px solid black;
+    }
+
+    .ourMission{
+      grid-row: 2/3;
+      grid-column: 2/3;
+      border: 1px solid black;
+    }
+
+    .ourHelp{
+      grid-row: 3/4;
+      grid-column: 1/2;
+      border: 1px solid black;
+    }
+
+    .ourSupports{
+      grid-row: 3/4;
+      grid-column: 2/3;
+      border: 1px solid black;
+    }
+
+
+  }
+}
+//Core team
+.MeetOurTeam{
+  grid-row: 4/5;
+  grid-column: 1/7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  border: 5px solid black;
+
+  .MeetOurTeamInfo{
+    grid-row: 1/2;
+    grid-column: 2/6;
+    border: 1px solid black;
+  }
+
+  .EmmaDicks{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    border: 1px solid black;
+  }
+
+  .EmmaDetails{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    border: 1px solid black;
+  }
+
+  .andreaPetersen{
+    grid-row: 2/3;
+    grid-column: 4/5;
+    border: 1px solid black;
+  }
+
+  .andreaDetails{
+    grid-row: 2/3;
+    grid-column: 5/6;
+    border: 1px solid black;
+  }
+
+  .teganCrous{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    border: 1px solid black;
+  }
+
+  .teganDetails{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    border: 1px solid black;
+  }
+
+  .TracyAnneSikenjana{
+    grid-row: 3/4;
+    grid-column: 4/5;
+    border: 1px solid black;
+  }
+
+  .TracyAnneDetails{
+    grid-row: 3/4;
+    grid-column: 5/6;
+    border: 1px solid black;
+  }
+
+}
